@@ -73,6 +73,42 @@
 			</div>
 		</div>
 
+		<!-- Inicio do Painel de Avaliação -->
+
+		<div class="panel panel-default" id="painel_avaliacao">
+			<div class="panel-heading" id="headingAvaliacao">
+				<h3 class="panel-title">
+					<b>Avaliação do Serviço</b>
+				</h3>
+			</div>
+			<div class="panel-body">
+				<div class="form-group row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="slc_Avalia">Classifique o Atendimento </label>
+							<select class="form-control" name="slc_Avalia" id="slc_Avalia">
+								<option value="">Selecione</option>
+								<option value="Satisfeito ">Satisfeito </option>
+								<option value="Parcialmente Satisfeito">Parcialmente Satisfeito</option>
+								<option value="Insatisfeito ">Insatisfeito</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="txt_Comentario">Comentário:</label>
+							<textarea class="form-control" rows="4" name="txt_Comentario"
+								id="txt_Comentario"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Fim do Painel -->
+
 		<div class="panel panel-default" id="DadoSolicitante">
 			<div class="panel-heading" id="headingSolicitante">
 				<h3 class="panel-title"><i class="flaticon flaticon-account-circle icon-md"></i> Dados do Solicitante
@@ -847,7 +883,6 @@
 							</div>
 
 							<div class="form-group table-responsive">
-
 								<div class="table" id="tableGraficaComercial">
 									<thead>
 									</thead>
@@ -1225,6 +1260,7 @@
 				<hr>
 			</div>
 		</div>
+		
 		<!-- Fim do Painel -->
 
 		<script>

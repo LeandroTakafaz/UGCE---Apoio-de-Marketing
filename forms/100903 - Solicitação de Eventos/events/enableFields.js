@@ -17,11 +17,16 @@ function enableFields(form){
 		fields = ["responsavel","respDemanda", "Eventos", "Coffee", "Jornada", "Logo", "Estrategia", "Imprensa", "Grafica", "Cobertura", "Outros"]
 		enableFieldsFromList(form,fields)
 	}   
-	else if(Now_State == 10 || Now_State == 38 || Now_State == 78 || Now_State == 85 || Now_State == 89 || Now_State == 93 || Now_State == 109){
+	else if(Now_State == 10 || Now_State == 78 || Now_State == 85 || Now_State == 89 || Now_State == 93 || Now_State == 109 || Now_State == 122){
 			disableAllFields(form)
 			fields = ["Eventos", "Coffee", "Jornada", "Logo", "Estrategia", "Imprensa", "Grafica", "Cobertura", "Outros"]
 			enableFieldsFromList(form, fields)
-		}
+	}
+ 	else if(Now_State == 38) {
+		disableAllFields(form)
+		fields = ["slc_Avalia","txt_Comentario","Eventos", "Coffee", "Jornada", "Logo", "Estrategia", "Imprensa", "Grafica", "Cobertura", "Outros"]
+		enableFieldsFromList(form, fields)
+	}
 	else{			
     	disableAllFields(form)
     }
